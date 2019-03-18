@@ -1,0 +1,1 @@
+To keep up my skills I have taken on a new project, for an esport group. It is called unity and I am creating a website to show them off and allow fans to communicate with them. It includes a full login system and also forums all built from scratch code to help improve my skills. Hope it works out well.

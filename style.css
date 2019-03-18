@@ -1,0 +1,666 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+@font-face {
+  font-family: hemihead;
+  src: url(/fonts/hemihead.ttf);
+}
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+  background-color: #333333;
+  height:100%;
+    width:100%;
+    padding:0;
+    margin:0;
+}
+/*GLOBAL ATRIBUTES */
+#button1 {
+  cursor: pointer;
+  padding: 18px 30px;
+  background-color: #48e2ad;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  text-decoration: none;
+  border: 1px solid grey;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#button1:hover {
+  cursor: pointer;
+  transition-duration: 0.6s;
+  padding: 18px 30px;
+  background-color: #1cb07c;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  text-shadow: 1px 1px 2px grey;
+  text-decoration: none;
+  border: 1px solid grey;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+/* HEADER CSS */
+.header {
+  width: 100%;
+  background: white;
+}
+.header_social {
+  float: right;
+  margin-right: 30px;
+}
+.header_social p{
+  font-size: 18px;
+  margin-top: 12px;
+}
+.social_image {
+  width: 30px;
+  margin-top: 0px;
+}
+.image_logo {
+  width: 100px;
+  margin-top: 2em;
+  margin-left: 3em;
+  margin-bottom: -1.5em;
+}
+.header_menu {
+  float: right;
+  margin-top: -2em;
+  margin-right: 50px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.header_menu a {
+  text-decoration: none;
+  color: grey;
+}
+.menu_page {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  height: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+.menu_page_end {
+  height: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+#active {
+  border-bottom: 5px solid #48e2ad;
+}
+/*END OF HEADER
+-=-=-=-=-=-=-=-=-=-=-=-=
+START OF BODY */
+.main_content {
+  color: white;
+  weight:100%;
+  width:100%;
+  padding:0;
+  margin:0
+}
+/*INDEX BODY*/
+/*My personaltiy*/
+.main_header {
+  width: 80%;
+  height: 100%;
+  margin-left: 10%;
+}
+.main_header h1, h4 {
+  text-align: center;
+  font-family: hemihead;
+}
+.main_header h1 {
+  font-size: 70px;
+}
+/* ABOUT */
+.main_about {
+  background-color: white;
+  color: #333333;
+  height: auto;
+  width: 100%;
+  padding-bottom: 25px;
+}
+.about_content {
+  height: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 50px;
+}
+.main_about img {
+  height: 300px;
+  margin-top: 50px;
+  margin-right: 50px;
+  float: left;
+  border-radius: 50%;
+}
+.main_about h1 {
+  padding-top: 40px;
+}
+.main_about p {
+  font-weight: 600;
+}
+.main_about button {
+  margin-top: 30px;
+}
+/*Links*/
+.main_links h1 {
+  font-family: hemihead;
+  font-size: 90px;
+  text-align: center;
+  padding-top: 50px;
+    text-shadow: 3px 3px 2px black;
+}
+.main_links h5 {
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 50px;
+  text-shadow: 3px 3px 2px black;
+}
+.main_links button {
+  margin-bottom: 40px;
+  margin-top: -20px;
+}
+.links_button {
+  text-align: center;
+}
+.links_portfolio {
+  background: url("/images/homepage_bagrounds/portfolio.jpeg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  margin-top: -70px;
+  padding-bottom: 70px;
+}
+.links_blog {
+  background: url("/images/homepage_bagrounds/blog.png") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  margin-top: -70px;
+  padding-bottom: 70px;
+}
+.links_contact {
+  background: url("/images/homepage_bagrounds/contact.jpeg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  margin-top: -70px;
+  margin-bottom: -70px;
+  padding-bottom: 70px;
+}
+/*PORTFOLIO BODY */
+.portfolio_title{
+  width: 80%;
+  margin-left: 10%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.portfolio_dropdown {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+.portfolio_heading {
+  background-color: #48e2ad;
+  border: 1px solid grey;
+  width: 100%;
+  height: 50px;
+}
+.portfolio_dropdown h2 {
+  margin-top: 8px;
+  margin-left: 8px;
+}
+.portfolio_content {
+  background-color: white;
+  border: 1px solid grey;
+  width: 100%;
+  height: auto;
+  padding-bottom: 40px;
+}
+.portfolio_items {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+.portfolio_detail {
+  width: 250px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: grey;
+  padding-bottom: 40px;
+  margin-bottom: 20px;
+}
+.portfolio_detail img {
+  width: 100%;
+  height: 150px;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: 0;
+}
+.portfolio_detail h3, p{
+  margin-left: 10px;
+  margin-right: 5px;
+  margin-top: 0px;
+}
+.portfolio_detail button {
+  background-color: #48e2ad;
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 55px;
+}
+/*SERVICES BODY */
+.services {
+  width: 80%;
+  height: auto;
+  margin-left: 10%;
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+.services_title {
+  text-align: center;
+}
+.services_content {
+  height: 500px;
+  margin-top: 200px;
+  vertical-align: middle;
+}
+.services_content_main {
+  width: 300px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #333333;
+}
+.service_img {
+  width: 130px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -2em;
+}
+#services_alt {
+  width: 100%;
+  height: auto;
+  color: white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: #b3b3b3;
+}
+.services_order {
+  text-align: center;
+  color: #333333;
+  background-color: white;
+  width: 80%;
+  margin-left: 10%;
+  padding-bottom: 50px;
+}
+.service_order_button {
+  background-color: #b3b3b3;
+  width: 120px;
+  padding: 1px;
+  box-shadow: 0px 0px 20px #888888;
+  border-radius: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.services_order a {
+  text-decoration: none;
+  color: white;
+}
+/*BLOG BODY */
+.blog_heading {
+  text-align: center;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -110px;
+}
+/*REPEATING BLOG HOMEPAGE*/
+.blog_post {
+  background-color: white;
+  width: 80%;
+  height: auto;
+  margin-left: 10%;
+  margin-right: auto;
+  margin-top: 100px;
+  color: #333333;
+  padding-bottom: 20px;
+  display: inline-block;
+  border-radius: 2%;
+  word-break: keep-all;
+}
+.blog_date_detail {
+  width: 150px;
+}
+.blog_date {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #333333;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+.blog_date p {
+  padding-top: 35px;
+}
+.blog_post .blog_title {
+  font-size: 40px;
+  margin-top: 15px;
+}
+.blog_post .blog_author {
+  margin-top: -30px;
+}
+.blog_post .blog_subject {
+  float: right;
+  margin-right: 40px;
+}
+.blog_post .blog_main_content {
+
+}
+.blog_post .blog_image {
+  width: 40%;
+  float: left;
+  border-radius: 10%;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: inline;
+}
+.blog_post .blog_content {
+  margin-top: -5px;
+  margin-left: 10px;
+  padding-right: 10px;
+  text-align: left;
+  float: none;
+  font-size: 15px;
+  white-space: -moz-pre-wrap; /* Mozilla, supported since 1999 */
+  white-space: -pre-wrap; /* Opera */
+  white-space: -o-pre-wrap; /* Opera */
+  white-space: pre-wrap; /* CSS3 - Text module (Candidate Recommendation) http://www.w3.org/TR/css3-text/#white-space */
+  word-wrap: break-word;
+}
+/*BLOG ON PIPEHEXTREME */
+#blog_pipehextreme {
+  background: url("/images/PipeHextreme_Background.png") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  margin-top: -30px;
+  padding-bottom: 100px;
+  margin-bottom: -80px;
+}
+.blog_pipehextreme_title{
+  text-align: center;
+  background-color: white;
+  width: 80%;
+  height: auto;
+  margin-left: 10%;
+  margin-right: auto;
+  margin-top: 100px;
+  color: #333333;
+  padding-bottom: 20px;
+  display: inline-block;
+  border-radius: 2%;
+}
+/*CONTACT BODY */
+.contactform_table {
+  width: 50%;
+  margin-top: 3em;
+  margin-left: 25%;
+}
+.contactform_table td {
+  padding: 8px;
+}
+.contactform_table caption{
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+}
+.table_lable {
+  text-align: right;
+}
+.table_email {
+  margin-top: -120px;
+}
+.table_submit {
+  text-align: right;
+  padding-right: 45px;
+}
+.contactform_table input[type=submit] {
+    padding:5px 15px;
+    background:#ccc;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    height: 40px;
+    width: 90px;
+}
+.contactform_table input[type=text] {
+    padding:5px;
+    border:2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.contactform_table textarea {
+    padding:5px;
+    border:2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.contactform_table select {
+    padding:5px;
+    border:2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.contactform_table input[type=text]:focus {
+    border-color:#333;
+}
+.email_error {
+  color: red;
+  padding-top: 20px;
+  font-size: 12px;
+}
+.email_success {
+  color: green;
+  padding-top: 20px;
+  font-size: 14px;
+}
+/* PIPE HEXTREME STYLING */
+
+.main_pipehextreme {
+  background: url("/images/PipeHextreme_Background.png") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  display: block;
+  height: auto;
+  width: 100%;
+  color: white;
+  margin-bottom: -25px;
+  margin-top: 0px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.main_pipehextreme h1, h4{
+  text-align: center;
+}
+.pipehextreme_about {
+  background-color: white;
+  color: #333333;
+  height: auto;
+  width: 100%;
+  padding-bottom: 25px;
+}
+.pipehextreme_about img {
+  height: 300px;
+  margin-top: 50px;
+  margin-right: 50px;
+  float: left;
+  border-radius: 50%;
+}
+.pipehextreme_about h1 {
+  padding-top: 40px;
+}
+.pipehextreme_dowloads {
+  background: url("/images/PipeHextreme_Background.png") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  display: block;
+  height: auto;
+  width: 100%;
+  color: white;
+  margin-top: 0px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.pipehextreme_dowloads a{
+  text-decoration: none;
+  color: white;
+}
+.pipehextreme_dowloads a:hover{
+  text-decoration: underline;
+  color: blue;
+}
+.pipehextreme_dowloads h1{
+  text-align: center;
+}
+.pipehextreme_dowloads h2{
+  font-family: 'Permanent Marker', cursive;
+  font-weight: lighter;
+}
+.pipehextreme_dowloads h4{
+  margin-top: -10px;
+}
+.pipehextreme_dowloads table {
+  width: 80%;
+  margin-left: 10%;
+  text-align: center;
+}
+.pipehextreme_dowloads table td {
+  padding-top: 50px;
+  width: 30%;
+}
+/* LOGIN */
+.login {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 10%;
+}
+.login  table{
+  margin-top: 50px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.login .btnLogin,.btnRegister {
+    background-color: #48e2ad;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.login table td input {
+    height: 25px;
+    margin-left: -30px;
+}
+.login table td h3 {
+    font-size: 20px;
+    text-align: right;
+}
+/* Register */
+.register {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 10%;
+}
+.register  table{
+  margin-top: 50px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.register .btnLogin,.btnRegister {
+    background-color: #48e2ad;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.register table td input {
+    height: 25px;
+    margin-left: 0px;
+}
+.register table td h3 {
+    font-size: 20px;
+    text-align: right;
+}
+/* Post blog */
+.postblogForm {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 180px;
+}
+.postblogForm .btnSubmit {
+background-color: #48e2ad;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin-top: 30px;
+float: right;
+}
+/* END OF MAIN BODY CONTENT */
+
+/*FOOTER */
+.footer {
+  margin-top: 4em;
+  margin-bottom: -2em;
+  background-color: white;
+  height: auto;
+  width: 100%;
+  text-align: center;
+  color: black;
+}
+.footer_social_images {
+  width: 70%;
+  margin-left: 15%;
+}
+.footer img {
+  margin-top: -2em;
+  padding: 10px;
+}
