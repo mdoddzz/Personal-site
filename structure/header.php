@@ -8,6 +8,7 @@
         <li <? if($urlSections[1] == "contact") { ?>class="current"<? } ?>><a href="/contact">Contact</a></li>
 
         <li class="flexGrow"></li>
+        <li><div class="toggle <? if($darkTheme) { ?>active<? } ?>"></div></li>
         <li><a href="https://github.com/wilxiteMike" target="_blank" title="My GitHub Profile"><img src="<?= uploadLocation."/git_profile_picture.jpeg"; ?>" /></a></li>
 
     </ul>

@@ -88,4 +88,6 @@ $currency['GBP'] = array('name' => 'British Pound', 'symbol' => '&pound;');
 $currency['USD'] = array('name' => 'US Dollar', 'symbol' => '&#36;');
 $currency['EUR'] = array('name' => 'Euro', 'symbol' => '&euro;');
 
+$bgColourArray = array("pinkBG", "blueBG", "greenBG");
+
 ?>
