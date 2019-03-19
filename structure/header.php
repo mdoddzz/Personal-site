@@ -1,6 +1,3 @@
-<?
-$gitUser = gitAPIcall("https://api.github.com/users/wilxiteMike");
-?>
 <div id="header">
 
     <ul class="headerNav">
