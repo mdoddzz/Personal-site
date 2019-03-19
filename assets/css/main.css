@@ -66,6 +66,10 @@ h3 {
 #header .headerNav li:first-child a {
     padding-left: 0px;
 }
+
+#header .headerNav li:last-child a {
+    padding-right: 0px;
+}
   
 #header .headerNav li:not(.current) a:hover {
     color: #949494;
