@@ -17,7 +17,7 @@
 
     <div class="container twoThirds">
 
-        <div class="blogSpotlight <?= $bgColourArray[array_rand($bgColourArray, 1)] ?>">
+        <div class="blogSpotlight">
             <img class="blogImage" src="https://countrylakesdental.com/wp-content/uploads/2016/10/orionthemes-placeholder-image.jpg" />
             <div>
                 <h2 class="blogTitle">Latest  Blog Title</h2>
@@ -27,7 +27,7 @@
             </div>
         </div>
 
-        <div class="blogItem <?= $bgColourArray[array_rand($bgColourArray, 1)] ?>">
+        <div class="blogItem">
             <div>
                 <img class="blogImage" src="https://countrylakesdental.com/wp-content/uploads/2016/10/orionthemes-placeholder-image.jpg" />
             </div>
@@ -39,7 +39,7 @@
             </div>
         </div>
 
-        <div class="blogItem <?= $bgColourArray[array_rand($bgColourArray, 1)] ?>">
+        <div class="blogItem">
             <div>
                 <img class="blogImage" src="https://countrylakesdental.com/wp-content/uploads/2016/10/orionthemes-placeholder-image.jpg" />
             </div>
@@ -51,7 +51,7 @@
             </div>
         </div>
 
-        <div class="blogItem <?= $bgColourArray[array_rand($bgColourArray, 1)] ?>">
+        <div class="blogItem">
             <div>
                 <img class="blogImage" src="https://countrylakesdental.com/wp-content/uploads/2016/10/orionthemes-placeholder-image.jpg" />
             </div>
@@ -63,7 +63,7 @@
             </div>
         </div>
 
-        <div class="blogSpotlight <?= $bgColourArray[array_rand($bgColourArray, 1)] ?>">
+        <div class="blogSpotlight">
             <img class="blogImage" src="https://countrylakesdental.com/wp-content/uploads/2016/10/orionthemes-placeholder-image.jpg" />
             <div>
                 <h2 class="blogTitle">Spotlight  Blog Title</h2>
@@ -73,7 +73,7 @@
             </div>
         </div>
 
-        <div class="blogItem <?= $bgColourArray[array_rand($bgColourArray, 1)] ?>">
+        <div class="blogItem">
             <div>
                 <img class="blogImage" src="https://countrylakesdental.com/wp-content/uploads/2016/10/orionthemes-placeholder-image.jpg" />
             </div>
@@ -85,7 +85,7 @@
             </div>
         </div>
 
-        <div class="blogItem <?= $bgColourArray[array_rand($bgColourArray, 1)] ?>">
+        <div class="blogItem">
             <div>
                 <img class="blogImage" src="https://countrylakesdental.com/wp-content/uploads/2016/10/orionthemes-placeholder-image.jpg" />
             </div>
@@ -97,7 +97,7 @@
             </div>
         </div>
 
-        <div class="blogItem <?= $bgColourArray[array_rand($bgColourArray, 1)] ?>">
+        <div class="blogItem">
             <div>
                 <img class="blogImage" src="https://countrylakesdental.com/wp-content/uploads/2016/10/orionthemes-placeholder-image.jpg" />
             </div>
@@ -109,7 +109,7 @@
             </div>
         </div>
 
-        <div class="blogItem <?= $bgColourArray[array_rand($bgColourArray, 1)] ?>">
+        <div class="blogItem">
             <div>
                 <img class="blogImage" src="https://countrylakesdental.com/wp-content/uploads/2016/10/orionthemes-placeholder-image.jpg" />
             </div>
@@ -121,7 +121,7 @@
             </div>
         </div>
 
-        <div class="blogItem <?= $bgColourArray[array_rand($bgColourArray, 1)] ?>">
+        <div class="blogItem">
             <div>
                 <img class="blogImage" src="https://countrylakesdental.com/wp-content/uploads/2016/10/orionthemes-placeholder-image.jpg" />
             </div>
@@ -133,7 +133,7 @@
             </div>
         </div>
 
-        <div class="blogItem <?= $bgColourArray[array_rand($bgColourArray, 1)] ?>">
+        <div class="blogItem">
             <div>
                 <img class="blogImage" src="https://countrylakesdental.com/wp-content/uploads/2016/10/orionthemes-placeholder-image.jpg" />
             </div>
