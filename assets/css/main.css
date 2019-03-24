@@ -19,6 +19,7 @@ h3 {
     font-weight: 600;
     margin: 0px;
 }
+
 /* General Styles */
 
 .flexGrow {
@@ -286,6 +287,177 @@ h3 {
 
 .boxContainerSplit.quaterContainer .boxContainer {
 	width: calc(25% - 20px);
+}
+
+/* Form Container */
+
+.formContainer {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.formContainer .inputRow {
+	display: flex;
+	margin-bottom: 12px;
+	align-items: center;
+}
+
+.formContainer .inputRow > *:first-child {
+    width: 110px;
+    font-size: 12px;
+    color: #717171;
+    font-weight: 600;
+    padding-left: 18px;
+    padding-top: 2px;
+    padding-right: 24px;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.formContainer .inputRow > *:nth-child(2) {
+	width: calc(100% - 300px);
+    min-width: 200px;
+    max-width: 400px;
+	margin-right: 5px;
+}
+
+.formContainer .inputRow > div.validationInput > input, .formContainer .inputRow > div.validationInput > select, .formContainer .inputRow > div.validationInput > textarea  {
+	width: 100%;
+}
+
+.formContainer .inputRow > div.validationInput > textarea  {
+	max-width: 100% !important;
+}
+
+.formContainer .inputRow > div.validationInput.fullWidth {
+	max-width: calc(100% - 300px);
+} 
+
+.formContainer .inputRow > div.validationInput > .help-block.form-error {
+	margin: 0px;
+}
+
+.formContainer .inputRow textarea {
+    min-height: 100px;
+}
+
+.formContainer .inputRow.financial > *:nth-child(2) {
+	width: 70px;
+    min-width: 70px;
+    text-align: right;
+	color: #00529B;
+}
+
+.formContainer .inputRow p {
+    margin: 0px;
+    color: #1fa92a;
+}
+
+.formContainer.splitForm {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.formContainer.splitForm .inputRow {
+	width: 50%;
+}
+
+.formContainer.splitFormContainer {
+	width: 50%;
+	float: left;
+}
+
+/* animated form container */
+
+.animatedInput {
+    position: relative;
+}
+
+.formContainer .animatedInput input[type="text"] {
+    font: 15px/24px "Lato", Arial, sans-serif;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: 1px; 
+    border: 0;
+    padding: 4px 0;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+}
+
+.formContainer .animatedInput input[type="text"]:focus {
+    outline: none;
+}
+
+.formContainer .animatedInput label {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 9px;
+    color: #aaa;
+    transition: 0.3s;
+    z-index: -1;
+    letter-spacing: 0.5px;
+}
+
+.formContainer .animatedInput input:focus ~ label {
+    top: -16px;
+    font-size: 12px;
+    color: #4caf50;
+    transition: 0.3s;
+}
+
+.formContainer .animatedInput .focus-border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #4caf50;
+    transition: 0.4s;
+}
+
+.formContainer .animatedInput input:focus ~ .focus-border{
+    width: 100%;
+    transition: 0.4s;
+}
+
+/* Full width form container */
+
+.fullWidthForm {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.fullWidthForm.fullWithFormSplit {
+	display: flex;
+}
+
+.fullWidthForm.fullWithFormSplit div {
+	width: 50%;
+}
+
+.fullWidthForm.fullWithFormSplit input {
+	padding: 7px;
+}
+
+.fullWidthForm label {
+    width: 100%;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.fullWidthForm textarea {
+    width: 100%;
+    min-height: 120px;
+    resize: vertical;
+}
+
+.fullWidthForm input, .fullWidthForm select, .fullWidthForm .select2 {
+	width: 100% !important;
+	margin-bottom: 12px;
 }
 
 /* Blog Spotlight */

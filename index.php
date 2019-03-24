@@ -30,6 +30,9 @@ $darkTheme = $_COOKIE["darkTheme"];
     <!-- Dark Mode CSS -->
     <link rel="stylesheet" type="text/css" href="/assets/css/dark.css">
 
+    <!-- Icon CSS -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/fontawesome.min.css">
+
     <!-- jQuery -->
     <script type="text/javascript" src="/assets/js/jquery.js"></script>
 

@@ -9,17 +9,36 @@
 
     <div class="container">
 
-        <p><strong>Email:</strong> contact@michaeldodd.co.uk</p>
-        <p><strong>Twitter:</strong> @mdoddzz</p>
-        <p><strong>Linkedin:</strong> linkedin.com/afdsfsd</p>
+        <a><i class="fas fa-envelope"></i> contact@michaeldodd.co.uk</a><br>
+        <a><i class="fab fa-twitter-square"></i> @mdoddzz</a><br>
+        <a><i class="fab fa-linkedin"></i> linkedin.com/afdsfsd</a><br>
+        <a><i class="fab fa-github"></i> github.com/wilxiteMike</a>
 
     </div>
 
     <div class="container twoThirds">
 
-        <div class="formContainer">
+        <form class="formContainer">
 
-        </div>
+            <div class="animatedInput">
+                <input type="text" name="contactName" />
+                <label>Name</label>
+                <span class="focus-border"></span>
+            </div>
+
+            <div class="animatedInput">
+                <input type="text" name="contactEmail" />
+                <label>Email</label>
+                <span class="focus-border"></span>
+            </div>
+
+            <div class="animatedInput">
+                <label>Message</label>
+                <textarea name="contactMessage"></textarea>
+                <span class="focus-border"></span>
+            </div>
+
+        </form>
 
     </div>
 
