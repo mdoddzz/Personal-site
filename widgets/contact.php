@@ -33,8 +33,8 @@
             </div>
 
             <div class="animatedInput">
-                <label>Message</label>
                 <textarea name="contactMessage"></textarea>
+                <label>Message</label>
                 <span class="focus-border"></span>
             </div>
 

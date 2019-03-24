@@ -13,3 +13,7 @@ body.night h1, body.night .blogTitle, body.night .blogDescription, body.night .b
 body.night #header .headerNav li.current a {
     color: #4393b8;
 }
+
+body.night input, body.night textarea {
+    color: #d7d7d7;
+}

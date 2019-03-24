@@ -107,5 +107,19 @@ $darkTheme = $_COOKIE["darkTheme"];
 
     })
 
+    $('.animatedInput input, .animatedInput textarea').change( function(){
+
+        if($(this).val()) {
+
+            $(this).addClass('hasContent');
+
+        } else {
+
+            $(this).removeClass('hasContent');
+
+        }
+
+    });
+
 </script>
 </html>
