@@ -30,6 +30,10 @@ h3 {
     margin: 0 !important;
 }
 
+.right {
+    float: right;
+}
+
 /* colours */
 
 .greenBG {
@@ -45,6 +49,87 @@ h3 {
 .pinkBG {
     background-color: #e4c1de;
     box-shadow: 0px 0px 20px 0px #edd0e8;
+}
+
+/* Buttons */
+
+.button {
+    padding: 4px 10px;
+    background-color: #e2e2e2;
+    border-radius: 3px;
+    /* box-shadow: 1px 1px 0px #a9a9a9; */
+    font-size: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+	position: relative;
+}
+
+.button.shadow {
+	box-shadow: 1px 1px 0px #a9a9a9;
+}
+
+.button:not(.noHover):hover:after {
+	content: '';
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-color: rgba(0, 0, 0, 0.05);
+	transition-delay: 1s;
+}
+
+.button.medium {
+	padding: 6px 12px;
+}
+
+.button.large {
+	padding: 10px 16px;
+	font-size: 16px;
+}
+
+.button.positive {
+	color: #fff;
+    background-color: #58b751;
+}
+
+.button.positive:not(.noHover):hover {
+	background-color: green !important;
+}
+
+.button.neutral {
+	color: #fff;
+    background-color: #cdaa5c;
+}
+
+.button.negative {
+	color: #fff;
+    background-color: #ff7373;
+}
+
+.button.blue {
+    background-color: #2ca5d9;
+    color: #fff;
+}
+
+.button.yellow {
+    color: #ffffff !important;
+    background-color: #f5ac26 !important;
+}
+
+.button.yellow:hover {
+    background-color: orange !important;
+}
+
+.button.red {
+    color: #ffffff !important;
+    background-color: #E97878 !important;
+}
+
+.button.red:hover {
+    background-color: #E33F3F !important;
 }
 
 /* Header */

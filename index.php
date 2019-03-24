@@ -40,12 +40,11 @@ $darkTheme = $_COOKIE["darkTheme"];
 <body <? if($darkTheme) { ?>class="night";<? } ?>>
     <?
     // current page url (to get template and other page details)
-    $urlSections = explode('/', $_SERVER["REQUEST_URI"]);
+    $urlSections = explode('/', before("?", $_SERVER["REQUEST_URI"]));
 
     include("structure/header.php");
 
     // temp solution for page management
-
     ?>
     <div id="body">
         <?

@@ -1,3 +1,12 @@
+<?
+
+if($sbmt) { 
+    
+    mail("whomjd5@gmail.com", "NEW Website contect request!!", "Name: ".$contactName."<br>Email: ".$contactEmail."<br>Message: ".$contactMessage);
+
+}
+
+?>
 <h1>Contact.</h1>
 <h3>If for any reason you would like to contact me<br>I guess here is the best place to do so</h3>
 
@@ -18,7 +27,7 @@
 
     <div class="container twoThirds">
 
-        <form class="formContainer">
+        <form class="formContainer" id="contactForm">
 
             <div class="animatedInput">
                 <input type="text" name="contactName" />
@@ -38,10 +47,21 @@
                 <span class="focus-border"></span>
             </div>
 
-            <a class="submitButton">Submit</a>
+            <input type="hidden" name="sbmt" value="1" /> 
+
+            <a class="button right medium positive submitContact">Submit</a>
 
         </form>
 
     </div>
 
 </div>
+<script>
+
+$('.submitContact').click( function(){
+
+    $('#contactForm').submit();
+
+});
+
+</script>
