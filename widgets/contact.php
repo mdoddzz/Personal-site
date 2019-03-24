@@ -38,6 +38,8 @@
                 <span class="focus-border"></span>
             </div>
 
+            <a class="submitButton">Submit</a>
+
         </form>
 
     </div>
