@@ -36,6 +36,9 @@ $darkTheme = $_COOKIE["darkTheme"];
     <!-- jQuery -->
     <script type="text/javascript" src="/assets/js/jquery.js"></script>
 
+    <!-- Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
 </head>
 <body <? if($darkTheme) { ?>class="night";<? } ?>>
     <?
@@ -46,6 +49,10 @@ $darkTheme = $_COOKIE["darkTheme"];
 
     // temp solution for page management
     ?>
+    <div id="app">
+
+    </div>
+
     <div id="body">
         <?
         switch($urlSections[1]) {
@@ -72,6 +79,35 @@ $darkTheme = $_COOKIE["darkTheme"];
 </body>
 <!-- global script -->
 <script>
+
+
+    const NotFound = { template: '<p>Page not found</p>' }
+    //const Home = { template: '<p>home page</p>' }
+    //const Portfolio = { template: '<p>about page</p>' }
+
+    const routes = {
+        '/': Home,
+        '/portfolio': Portfolio
+    }
+
+    const app = new Vue({
+        el: '#app',
+        data: {
+            currentRoute: window.location.pathname
+        },
+        computed: {
+            ViewComponent () {
+                return routes[this.currentRoute] || NotFound
+            }
+        },
+        render (h) { 
+            return h(this.ViewComponent) 
+        }
+    })
+
+    window.addEventListener('popstate', () => {
+        app.currentRoute = window.location.pathname
+    })
 
     function setCookie(key, value) {
         var expires = new Date();
