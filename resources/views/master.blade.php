@@ -21,7 +21,7 @@
             <li {{( Request::segment('1') == 'contact' ? 'class=current' : false )}}><a href="/contact">Contact</a></li>
 
             <li class="flexGrow"></li>
-            <li><div {{ Cookie::get('darkTheme') ? 'class=toggle active' : 'class=toggle' }}></div></li>
+            <li><div class="toggle"></div></li>
             <li><a href="https://github.com/wilxiteMike" target="_blank" title="My GitHub Profile"><img src="" /></a></li>
 
         </ul>
@@ -31,7 +31,7 @@
 
     <div id="body">
     
-        <h1>{{ Cookie::get('darkTheme') }} @yield('pageTitle')</h1>
+        <h1>@yield('pageTitle')</h1>
         <h3>@yield('description')</h3>
     
         @yield('content')
@@ -69,6 +69,6 @@
         }
 
     });
-
+    
 </script>
 </html>
