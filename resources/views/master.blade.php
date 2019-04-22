@@ -30,10 +30,8 @@
 
 
     <div id="body">
-        
-        {{ Cookie::get('darkTheme') }}
     
-        <h1>@yield('pageTitle')</h1>
+        <h1>{{ Cookie::get('darkTheme') }} @yield('pageTitle')</h1>
         <h3>@yield('description')</h3>
     
         @yield('content')
@@ -71,8 +69,6 @@
         }
 
     });
-
-    $('.toggle').click();
 
 </script>
 </html>
