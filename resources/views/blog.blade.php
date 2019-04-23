@@ -33,7 +33,7 @@ Interesting or updates on personal projects
                 <h2 class="blogTitle">Latest  Blog Title</h2>
                 <p class="blogDate">Jan 1st 2019</p>
                 <p class="blogDescription">Description of the blog goes here</p>
-                <a class="blogButton">Read More..</a>
+                <a class="blogButton" href="blog/1">Read More..</a>
             </div>
         </div>
 
@@ -45,7 +45,7 @@ Interesting or updates on personal projects
                 <p class="blogDate">Dec 25th 2018</p>
                 <h2 class="blogTitle">Blog Title</h2>
                 <p class="blogDescription">Description of the blog goes here</p>
-                <a class="blogButton">Read More..</a>
+                <a class="blogButton" href="blog/2">Read More..</a>
             </div>
         </div>
 
@@ -57,7 +57,7 @@ Interesting or updates on personal projects
                 <p class="blogDate">Dec 16th 2018</p>
                 <h2 class="blogTitle">Blog Title</h2>
                 <p class="blogDescription">Description of the blog goes here</p>
-                <a class="blogButton">Read More..</a>
+                <a class="blogButton" href="blog/3">Read More..</a>
             </div>
         </div>
 

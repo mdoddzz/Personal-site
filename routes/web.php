@@ -22,10 +22,15 @@ Route::get('/portfolio', function () {
     return view('portfolio');
 });
 
-Route::get('/blog', function () {
-    return view('blog');
-});
+Route::get('/blog', 'blogController@blog');
+
+Route::get('/blog/{id}', 'blogController@getBlogPost');
 
 Route::get('/contact', function () {
     return view('contact');
+});
+
+// Admin
+Route::get('/admin', function () {
+    return view('admin_dashboard');
 });
