@@ -10,8 +10,6 @@ error_reporting(E_ALL);
  */
 
 define('LARAVEL_START', microtime(true));
-echo "test";
-exit;
 /*
 |--------------------------------------------------------------------------
 | Register The Auto Loader
@@ -25,7 +23,8 @@ exit;
 */
 
 require __DIR__.'/../vendor/autoload.php';
-
+echo "test";
+exit;
 /*
 |--------------------------------------------------------------------------
 | Turn On The Lights
