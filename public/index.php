@@ -23,8 +23,6 @@ define('LARAVEL_START', microtime(true));
 */
 
 require __DIR__.'/../vendor/autoload.php';
-echo "test";
-exit;
 /*
 |--------------------------------------------------------------------------
 | Turn On The Lights
@@ -38,7 +36,8 @@ exit;
 */
 
 $app = require_once __DIR__.'/../bootstrap/app.php';
-
+echo "test 3";
+exit;
 /*
 |--------------------------------------------------------------------------
 | Run The Application
