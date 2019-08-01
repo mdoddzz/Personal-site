@@ -1,6 +1,6 @@
 <?php
 
-echo "test";
+echo "test 2";
 exit;
 /**
  * Laravel - A PHP Framework For Web Artisans
