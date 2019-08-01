@@ -22,7 +22,7 @@
 
             <li class="flexGrow"></li>
             <li><div class="toggle"></div></li>
-            <li><a href="https://github.com/wilxiteMike" target="_blank" title="My GitHub Profile"><img src="" /></a></li>
+            <li><a href="https://github.com/wilxiteMike" target="_blank" title="My GitHub Profile"><img src="https://avatars2.githubusercontent.com/u/45361885?s=460&v=4" /></a></li>
 
         </ul>
 
