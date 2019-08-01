@@ -1,7 +1,7 @@
 <?php
-
-echo "test 2";
-exit;
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 /**
  * Laravel - A PHP Framework For Web Artisans
  *
@@ -11,6 +11,7 @@ exit;
 
 define('LARAVEL_START', microtime(true));
 
+exit;
 /*
 |--------------------------------------------------------------------------
 | Register The Auto Loader
