@@ -1,7 +1,5 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+
 /**
  * Laravel - A PHP Framework For Web Artisans
  *
@@ -57,5 +55,3 @@ $response = $kernel->handle(
 $response->send();
 
 $kernel->terminate($request, $response);
-echo "test 4";
-exit;
