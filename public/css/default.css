@@ -475,6 +475,7 @@ h3 {
 
 .formContainer .animatedInput textarea {
     height: 120px;
+    margin-bottom: -3px;
 }
 
 .formContainer .animatedInput input[type="text"]:focus, .formContainer .animatedInput textarea:focus {
