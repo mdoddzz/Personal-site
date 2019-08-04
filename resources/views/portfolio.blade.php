@@ -6,24 +6,26 @@
 A collection of what I spend my free time doing
 @endsection
 
-@section('contetn')
+@section('content')
 
-<div class="tabbedContainer">
+<div class="portfolioContainer">
 
-    <ul class="tabRow">
-        <li tabLinkId="githubPortfolio">Personal Github</li>
-        <li tabLinkId="employedPortfolio">Employed</li>
-    </ul>
+    <img class="portfolioImg" src="https://countrylakesdental.com/wp-content/uploads/2016/10/orionthemes-placeholder-image.jpg" />
 
-    <div id="githubPortfolio">
+    <div>
 
-        <!-- In the style of github -->
+        <h4>Portfolio item title</h4>
 
-    </div>
+        <p>Short description of the project goes here saying what it does</p>
 
-    <div id="employedPortfolio">
+        <ul>
+            <li>PHP</li>
+            <li>mySQL</li>
+            <li>JQuery</li>
+        </ul>
 
-        <!-- similar to blog items -->
+        <a class="button">View Details</a>
+        <a class="button">View Project</a>
 
     </div>
 
