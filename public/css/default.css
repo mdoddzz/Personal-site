@@ -176,6 +176,9 @@ h3 {
 
 #header .headerNav li:last-child a {
     padding-right: 0px;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
   
 #header .headerNav li:not(.current) a:hover {
