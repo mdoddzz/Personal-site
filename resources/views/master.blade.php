@@ -9,7 +9,7 @@
     <script type="text/javascript" src="/js/jquery.js"></script>
     <title>@yield('headTitle') - Micahel Dodd</title>
 </head>
-<body>
+<body {{( $_COOKIE['darkTheme'] ? 'class=night' : false )}}>
 
     <div id="header">
 
@@ -21,13 +21,12 @@
             <li {{( Request::segment('1') == 'contact' ? 'class=current' : false )}}><a href="/contact">Contact</a></li>
 
             <li class="flexGrow"></li>
-            <li><div class="toggle"></div></li>
+            <li><div class="toggle {{( $_COOKIE['darkTheme'] ? 'active' : false )}}"></div></li>
             <li><a href="https://github.com/wilxiteMike" target="_blank" title="My GitHub Profile"><img src="https://github.com/wilxiteMike.png?size=20" /></a></li>
 
         </ul>
 
     </div>
-
 
     <div id="body">
     
@@ -66,6 +65,17 @@
             $('body').addClass('night');
             $(this).addClass('active');
 
+        }
+
+    });
+
+    // Animated input handler
+    $('.animatedInput textarea, .animatedInput input').change( function(){
+
+        if($(this).val()) {
+            $(this).parents('.animatedInput').addClass('hasContent');
+        } else {
+            $(this).parents('.animatedInput').removeClass('hasContent');
         }
 
     });

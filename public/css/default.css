@@ -457,7 +457,7 @@ h3 {
 
 /* animated form container */
 
-.animatedInput {
+.formContainer .animatedInput {
     position: relative;
     margin-bottom: 32px;
 }
@@ -492,7 +492,7 @@ h3 {
     letter-spacing: 0.5px;
 }
 
-.formContainer .animatedInput input:focus ~ label, .formContainer .animatedInput input.hasContent ~ label, .formContainer .animatedInput textarea:focus ~ label, .formContainer .animatedInput textarea.hasContent ~ label {
+.formContainer .animatedInput input:focus ~ label, .formContainer .animatedInput.hasContent input ~ label, .formContainer .animatedInput textarea:focus ~ label, .formContainer .animatedInput.hasContent textarea ~ label {
     top: -16px;
     font-size: 12px;
     color: #4393b8;
@@ -509,7 +509,7 @@ h3 {
     transition: 0.4s;
 }
 
-.formContainer .animatedInput input:focus ~ .focus-border, .formContainer .animatedInput input.hasContent ~ .focus-border, .formContainer .animatedInput textarea:focus ~ .focus-border, .formContainer .animatedInput textarea.hasContent ~ .focus-border {
+.formContainer .animatedInput input:focus ~ .focus-border, .formContainer .animatedInput.hasContent input ~ .focus-border, .formContainer .animatedInput textarea:focus ~ .focus-border, .formContainer .animatedInput.hasContent textarea ~ .focus-border {
     width: 100%;
     transition: 0.4s;
 }
