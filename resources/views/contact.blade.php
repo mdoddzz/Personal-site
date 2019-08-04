@@ -10,6 +10,8 @@ I guess here is the best place to do so
 
 @section('content')
 
+<br>
+
 <div class="employmentStatus">
     <strong>Employment Status: </strong> Happily employed @ Wilxite Ltd
 </div>
@@ -50,7 +52,7 @@ I guess here is the best place to do so
             <input type="hidden" name="sbmt" value="1" /> 
             {{ csrf_field() }}
 
-            <input type="submit" class="button right medium positive submitContact" />
+            <input type="submit" class="button right medium positive submitContact" value="Send" />
 
         </form>
 
