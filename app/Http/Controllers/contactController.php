@@ -20,7 +20,7 @@ class contactController extends Controller
         
         ini_set("SMTP","mail.mdodddev.com");
 
-        mail("contact@michaeldodd.co.uk", "New Website Contact Request", "Email From: ".$_POST["contactName"]." <".$_POST["contactEmail"]."> \r\n\r\n ".$_POST["contactMessage"]);
+        mail("contact@michaeldodd.co.uk", "New Website Contact Request", "Email From: ".$_POST["contactName"]." <".$_POST["contactEmail"]."> \r\n\r\nMessage: ".$_POST["contactMessage"], $headers);
 
         return view('contact');
 
