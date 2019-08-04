@@ -27,7 +27,7 @@ I guess here is the best place to do so
 
     <div class="container twoThirds">
 
-        <form class="formContainer" id="contactForm">
+        <form class="formContainer" id="contactForm" method="POST">
 
             <div class="animatedInput">
                 <input type="text" name="contactName" />
@@ -48,8 +48,9 @@ I guess here is the best place to do so
             </div>
 
             <input type="hidden" name="sbmt" value="1" /> 
+            {{ csrf_field() }}
 
-            <a class="button right medium positive submitContact">Submit</a>
+            <input type="submit" class="button right medium positive submitContact" />
 
         </form>
 
