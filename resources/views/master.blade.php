@@ -68,6 +68,17 @@
         }
 
     });
+
+    // Animated input handler
+    $('.animatedInput textarea, .animatedInput input').change( function(){
+
+        if($(this).val()) {
+            $(this).parents('.animatedInput').addClass('hasContent');
+        } else {
+            $(this).parents('.animatedInput').removeClass('hasContent');
+        }
+
+    });
     
 </script>
 </html>
