@@ -21,15 +21,16 @@ A collection of what I spend my free time doing
             <p>Short description of the project goes here saying what it does</p>
 
             <ul class="portfolioTags">
-                <li>PHP</li>
-                <li>mySQL</li>
-                <li>JQuery</li>
+                <li style="background-color: magenta">PHP</li>
+                <li style="background-color: lightblue">mySQL</li>
+                <li style="background-color: orange">JQuery</li>
             </ul>
 
             <div class="clearfix"></div>
 
             <a class="button">View Details</a>
             <a class="button">View Project</a>
+            <a class="button">Git</a>
 
         </div>
 
