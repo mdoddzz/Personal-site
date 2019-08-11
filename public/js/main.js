@@ -10,31 +10,57 @@ function getCookie(key) {
     return keyValue ? keyValue[2] : null;
 }
 
-$('.toggle').click(function(){
+$(document).ready(function() {
 
-        if($(this).hasClass('active')){
-            
-        setCookie("darkTheme", 0);
-        $('body').removeClass('night');
-        $(this).removeClass('active');
+    $('.toggle').click(function(){
 
-    } else {
+            if($(this).hasClass('active')){
+                
+            setCookie("darkTheme", 0);
+            $('body').removeClass('night');
+            $(this).removeClass('active');
 
-        setCookie("darkTheme", 1);
-        $('body').addClass('night');
-        $(this).addClass('active');
+        } else {
 
-    }
+            setCookie("darkTheme", 1);
+            $('body').addClass('night');
+            $(this).addClass('active');
 
-});
+        }
 
-// Animated input handler
-$('.animatedInput textarea, .animatedInput input').change( function(){
+    });
 
-    if($(this).val()) {
-        $(this).parents('.animatedInput').addClass('hasContent');
-    } else {
-        $(this).parents('.animatedInput').removeClass('hasContent');
-    }
+    // Animated input handler
+    $('.animatedInput textarea, .animatedInput input').change( function(){
+
+        if($(this).val()) {
+            $(this).parents('.animatedInput').addClass('hasContent');
+        } else {
+            $(this).parents('.animatedInput').removeClass('hasContent');
+        }
+
+    });
+
+    //toggle menu
+    $(".hamburger-container").click(function() {
+        $("#menu").slideToggle();
+    });
+
+    //icon animation
+    var topBar = $(".hamburger li:nth-child(1)"),
+    middleBar = $(".hamburger li:nth-child(2)"),
+    bottomBar = $(".hamburger li:nth-child(3)");
+
+    $(".hamburger-container").on("click", function() {
+        if (middleBar.hasClass("rot-45deg")) {
+            topBar.removeClass("rot45deg");
+            middleBar.removeClass("rot-45deg");
+            bottomBar.removeClass("hidden");
+        } else {
+            bottomBar.addClass("hidden");
+            topBar.addClass("rot45deg");
+            middleBar.addClass("rot-45deg");
+        }
+    });
 
 });

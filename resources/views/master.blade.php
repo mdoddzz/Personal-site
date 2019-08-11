@@ -20,6 +20,14 @@
 
             <ul class="headerNav">
 
+                <li class="hamburger-container">
+                    <ul class="hamburger">
+                        <li class=""></li>
+                        <li class=""></li>
+                        <li class=""></li>
+                    </ul>
+                </li>
+
                 <li {{( Request::segment('1') == '' ? 'class=current' : false )}}><a href="/">Home</a></li>
                 <li {{( Request::segment('1') == 'portfolio' ? 'class=current' : false )}}><a href="/portfolio">Portfolio</a></li>
                 <li {{( Request::segment('1') == 'blog' ? 'class=current' : false )}}><a href="/blog">Blog</a></li>
