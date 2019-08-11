@@ -28,7 +28,7 @@ Route::get('/blog/{id}', 'blogController@getBlogPost');
 
 Route::get('/contact','contactController@contact');
 
-Route::post('/contact','contactController@sumbitContact');
+Route::post('/contact','contactController@submitContact');
 
 // Admin
 Route::get('/admin', function () {

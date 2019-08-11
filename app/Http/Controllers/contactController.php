@@ -13,9 +13,9 @@ class contactController extends Controller
         return view('contact');
     }
 
-    public function sumbitContact() 
+    public function submitContact() 
     {
-        // Sumbit contact
+        // Submit contact
         $headers = "From: ".$_POST["contactEmail"];
         
         ini_set("SMTP","mail.mdodddev.com");
