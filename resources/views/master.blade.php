@@ -1,28 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="/assets/css/default.css">
-    <link rel="stylesheet" type="text/css" href="/assets/css/dark.css">
-    <link rel="stylesheet" type="text/css" href="/assets/css/fontawesome.min.css">
-    <script type="text/javascript" src="/assets/js/jquery.js"></script>
-    <title>@yield('headTitle') - Micahel Dodd</title>
-</head>
-<body {{( isset($_COOKIE['darkTheme']) && $_COOKIE['darkTheme'] ? 'class=night' : false )}}>
 
     <head>
-        
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" type="text/css" href="/css/default.css">
-        <link rel="stylesheet" type="text/css" href="/css/dark.css">
-        <script type="text/javascript" src="/js/jquery.js"></script>
-        <script type="text/javascript" src="/js/main.js"></script>
+        <link rel="stylesheet" type="text/css" href="/assets/css/default.css">
+        <link rel="stylesheet" type="text/css" href="/assets/css/dark.css">
+        <link rel="stylesheet" type="text/css" href="/assets/css/fontawesome.min.css">
+        <script type="text/javascript" src="/assets/js/jquery.js"></script>
+        <script type="text/javascript" src="/assets/js/main.js"></script>
         <title>@yield('headTitle') - Micahel Dodd</title>
-
     </head>
 
     <body {{( isset($_COOKIE['darkTheme']) && $_COOKIE['darkTheme'] ? 'class=night' : false )}}>
