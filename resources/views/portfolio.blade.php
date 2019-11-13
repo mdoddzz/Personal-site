@@ -30,7 +30,7 @@ A collection of what I spend my free time doing
 
             <a class="button">View Details</a>
             <a class="button">View Project</a>
-            <a class="button">Git</a>
+            <a class="button"><i class="fab fa-github"></i> Git</a>
 
         </div>
 

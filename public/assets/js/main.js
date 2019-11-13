@@ -10,9 +10,9 @@ function getCookie(key) {
     return keyValue ? keyValue[2] : null;
 }
 
-$('.toggle').click(function(){
+$(document).on('click', '.toggle', function(){
 
-        if($(this).hasClass('active')){
+    if($(this).hasClass('active')){
             
         setCookie("darkTheme", 0);
         $('body').removeClass('night');
