@@ -1,15 +1,10 @@
-
-
 ## About My Personal Site
 
-
-## Contributing
-
-I am happy for people to make contibutions in order to expand and teach me knowledge, the code here may not be perfect please feel free to correct my mistakes
+This is a work in progress to display my blog post, portfolio and other things I want to share/
 
 ## Security Vulnerabilities
 
-If you discover a security vulnerability within this site please imidiatly contact [whomjd5@gmail.com](mailto:whomjd5@gmail.com)
+If you discover a security vulnerability within this site please imidiatly contact [contact@michaeldodd.co.uk](mailto:contact@michaeldodd.co.uk)
 
 ## Licenses
 
